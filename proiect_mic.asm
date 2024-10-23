@@ -95,7 +95,7 @@ invalid_input:
 
 end_program:
     MOV AH, 4CH   ; Terminate the program
-    INT 21H
+    INT 21H       ; Salut frate
 
 END
 
