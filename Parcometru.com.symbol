@@ -1,0 +1,32 @@
+< THE SYMBOL TABLE >  Parcometru.com  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+MSG_TITLE                	00103     	1         	VAR       	(NOSEG)   
+MSG_COST                 	0011B     	1         	VAR       	(NOSEG)   
+MSG_15MIN                	00123     	1         	VAR       	(NOSEG)   
+MSG_30MIN                	00132     	1         	VAR       	(NOSEG)   
+MSG_1HR                  	00140     	1         	VAR       	(NOSEG)   
+MSG_LOCURI               	0014E     	1         	VAR       	(NOSEG)   
+MSG_ETAJ1                	0015D     	1         	VAR       	(NOSEG)   
+MSG_ETAJ2                	00176     	1         	VAR       	(NOSEG)   
+MSG_ETAJ3                	0018F     	1         	VAR       	(NOSEG)   
+MSG_ETAJ4                	001A8     	1         	VAR       	(NOSEG)   
+MSG_INPUT_NRINMATRICULARE	001C1     	1         	VAR       	(NOSEG)   
+MSG_INPUT_CORP           	001D4     	1         	VAR       	(NOSEG)   
+MSG_INPUT_DURATA         	001ED     	1         	VAR       	(NOSEG)   
+CODE                     	00200     	-1        	LABEL     	(NOSEG)   
+MAIN                     	00200     	-1        	NEAR      	(NOSEG)   
+PRINT_TITLE              	0021C     	-1        	NEAR      	(NOSEG)   
+PRINT_TOP                	00224     	-1        	LABEL     	(NOSEG)   
+PRINT_BOTTOM             	00236     	-1        	LABEL     	(NOSEG)   
+PRINT_COST               	0023C     	-1        	NEAR      	(NOSEG)   
+PRINT_LOCURI_LIBERE      	00261     	-1        	NEAR      	(NOSEG)   
+PRINT_PARCOMETRU_INFO    	0028F     	-1        	NEAR      	(NOSEG)   
+PRINT_STRING             	002AB     	-1        	NEAR      	(NOSEG)   
+PRINT_LOOP               	002AD     	-1        	LABEL     	(NOSEG)   
+PRINT_STRING_END         	002B5     	-1        	LABEL     	(NOSEG)   
+===================================================================================================
+[ 11/12/2024  --  8:35:28 AM ] 
+< END >
+ 
