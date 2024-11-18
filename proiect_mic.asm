@@ -7,9 +7,9 @@ org 100h
 .data
 msg_title db "Parcometru in functiune", 0
 msg_cost db "Tarif: ", 0
-msg_15min db "0.25 RON/15min", 0
-msg_30min db "0.5 RON/30min", 0
-msg_1hr db "1.0 RON/1 ora", 0
+msg_15min db "0.75 RON/15min", 0
+msg_30min db "1.5 RON/30min", 0
+msg_1hr db "3.0 RON/1 ora", 0
 
 msg_locuri db "Locuri libere:", 0
 msg_etaj1 db "Corp A, Etaj 1: 3 locuri", 0
