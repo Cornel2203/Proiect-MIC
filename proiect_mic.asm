@@ -11,7 +11,7 @@ msg_title_top db "+=============================================================
 msg_title_inner db "||                          -Parcometru in Functiune-                         ||$", 10, 13
 msg_title_bottom db "+==============================================================================+$", 10, 13
 
-; Lista numerelor de înmatriculare, zonele ?i costurile
+; Lista numerelor de inmatriculare, zonele si costurile
 msg_db db "+------------------------------+     +----Zone----+    +--------Price--------+", 10, 13
         db " | PH 41 CRC: Afara           |            Z0           |  1 ora: 10 Lei    |", 10, 13
         db " | PH 87 MOX: Afara           |                                              ", 10, 13
@@ -65,7 +65,15 @@ main proc
     call print_message
     lea dx, msg_input_bottom
     call print_message
-
+                    
+    mov dh, 13
+    mov dl, 15                 
+    call move_cursor
+    repeat:
+    mov ah, 01h
+    int 21h
+    cmp al, 13
+    jne repeat
     ; Termina programul
     mov ah, 4Ch
     int 21h
@@ -78,4 +86,10 @@ print_message proc
     ret
 print_message endp
 
+move_cursor proc
+    mov ah,02h
+    mov bh, 0
+    int 10h
+    ret
+move_cursor endp
 end main
