@@ -29,8 +29,8 @@ msg_input_nr db "| Introdu nr. de inmatriculare: | |    Introdu zona:    | |  In
 msg_input_empty db "|                               | |                     | |                    |$", 10, 13
 msg_input_bottom db "+-------------------------------+ +---------------------+ +--------------------+$", 10, 13
 
-msg_verif_box db "          |              |", 10, 13
-msg_verif_line db "          +--------------+", 10, 13
+msg_verif_box db "        |              |              |             |        |              |$", 10, 13
+msg_verif_line db "           +--------------+              +-------------+        +--------------+$", 10, 13
 
 msg_verified db "Verificat$"
 msg_invalid db "Invalid  $"
@@ -178,7 +178,7 @@ validate_loop:
 
     ; Daca nu s-a gasit, afiseaza "Invalid"
     mov dh, 15
-    mov dl, 14
+    mov dl, 12
     call move_cursor
     lea dx, msg_invalid
     call print_message
@@ -187,7 +187,7 @@ validate_loop:
 
 input_valid:
     mov dh, 15
-    mov dl, 14
+    mov dl, 12
     call move_cursor
     lea dx, msg_verified
     call print_message
